@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS loan_payments (
+    id SERIAL PRIMARY KEY,
+    loan_id BIGINT REFERENCES loans(id),
+    amount NUMERIC NOT NULL,
+    paid_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    created_at TIMESTAMP NOT NULL DEFAULT NOW()
+);

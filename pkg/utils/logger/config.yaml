@@ -1,0 +1,8 @@
+logger:
+  level: "debug"
+  outputPaths:
+    - "stdout"
+    - "./logs/app.log"
+  errorOutputPaths:
+    - "stderr"
+  isProd: false
